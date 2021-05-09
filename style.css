@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.parent {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.winner__status {
+  color: white;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: rgb(20, 177, 125);
+}
+
+.board {
+  position: relative;
+  margin-top: 30px;
+  background-color: rgb(13, 72, 107);
+  height: 70vmin;
+  width: 70vmin;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  border: 1px solid rgb(29, 197, 133);
+  box-shadow: 0px 0px 13px 4px rgb(63 173 177);
+}
+
+.boxes {
+  background: url("./images/transbackground.jpg");
+  cursor: pointer;
+}
+
+.x {
+  background: url("./images/mycross.png") center/cover;
+}
+
+.o {
+  background: url("./images/round.png") center/cover;
+}
+
+.reset {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  font-size: 30px;
+  color: rgb(20, 177, 125);
+  cursor: pointer;
+}
+
+.turn {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  font-size: 30px;
+  color: rgb(23, 130, 156);
+  cursor: pointer;
+}
+
+.creater {
+  position: absolute;
+  color: rgb(79, 196, 180);
+  bottom: 0;
+  letter-spacing: 1.5px;
+  font-family: "Lato", sans-serif;
+}
